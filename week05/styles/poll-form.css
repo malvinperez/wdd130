@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Intel One Mono', monospace, serif;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+}
+
+header {
+    margin: 0 auto;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    color: #141b7e;
+     margin: 20px 0;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+legend {
+    padding: 5px;
+    color: #141b7e;
+    font-size: 1.3em;
+}
+
+label, input, select, textarea {
+    font-family: 'Noto Serif', serif;
+    font-size: 1em;
+}
+
+label {
+    text-align: right;
+    padding-right: 5px;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+button {
+    justify-self: center;   
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #141b7e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d1452;
+}
+
+footer {
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #ccc;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+    grid-gap: 10px;
+}   
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+    grid-gap: 10px;
+}
