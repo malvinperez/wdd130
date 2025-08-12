@@ -240,3 +240,174 @@ footer .socialmedia a img:hover {
     }
 
 }
+
+.employee-gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.employee-gallery img {
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+.employee-gallery figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  gap: 1rem;
+}
+.contact-form label, .contact-form textarea, .contact-form input {
+  font-size: 1rem;
+}
+.contact-form button {
+  background-color: #00BFFF;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #007ACC;
+}
+
+/* ==========================
+   Contact Page Additions
+========================== */
+
+/* Employee Profiles Section */
+.employee-profiles {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.employee-profiles h2 {
+  margin-bottom: 1.5rem;
+}
+
+.employee-profiles .profile {
+  display: inline-block;
+  margin: 1rem;
+  text-align: center;
+}
+
+.employee-profiles img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.employee-profiles figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Contact Info Section */
+.contact-info {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.contact-info h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.contact-info .map {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.contact-info iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Contact Form Section */
+.contact-form {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.contact-form h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 0.8rem;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form fieldset {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.contact-form legend {
+  font-weight: bold;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--secondary-color);
+}
