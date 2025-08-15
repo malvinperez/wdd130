@@ -411,3 +411,83 @@ footer .socialmedia a img:hover {
 .contact-form button:hover {
   background-color: var(--secondary-color);
 }
+
+.hero {
+  position: relative; /* allows the heading to position absolutely inside */
+  width: 100%;
+}
+
+.hero img {
+  width: 100%; /* full width */
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 15%; 
+  left: 50.6%;
+  transform: translate(-50%, -50%); /* center horizontally & vertically */
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+/* ===== Purpose & Offerings Grid ===== */
+.purpose-offerings {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.purpose-offerings h2 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.po-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.po-card {
+  background: #f7f9fc;
+  border: 1px solid #e6e9ef;
+  border-radius: 12px;
+  padding: 1rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.po-card figure {
+  margin: 0;
+}
+
+.po-card img {
+  width: 100%;
+  height: 180;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.po-card h3 {
+  margin: 0.25rem 0 0.1rem;
+  font-size: 1.15rem;
+}
+
+.po-card p {
+  margin: 0;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* (Optional) tighten layout on very wide screens */
+@media (min-width: 1200px) {
+  .po-card img {
+    height: 200px;
+  }
+}
+
